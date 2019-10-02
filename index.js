@@ -1,5 +1,7 @@
 const express = require('express')
 const db = require('./db')
+const Image = require('./image/model')
+const imageRouter = require('./image/router')
 // const bodyParser = require('body-parser')
 
 const app = express()
@@ -11,3 +13,5 @@ const port = 4005
 app.listen(port, () => {
   console.log(`I'm listening on port ${port} `)
 })
+
+app.use(imageRouter)
