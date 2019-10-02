@@ -5,6 +5,6 @@ const db = new Sequelize(databaseURL);
 
 db
   .sync()
-    console.log("Hello")
+    console.log("testing DB")
 
 module.exports = db
