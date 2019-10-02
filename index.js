@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
-const port = proces.env.PORT || 4005
+const port = process.env.PORT || 4005
 
 app.listen(port, () => {
   console.log(`I'm listening on port ${port} `)
